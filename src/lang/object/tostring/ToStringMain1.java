@@ -12,5 +12,8 @@ public class ToStringMain1 {
         // 위에 두개는 같다 println은 결국  toString을 포함시키고 있다.
         //toString으로는 객체의 정보를 제대로 알지 못하므로 재정의 오버라이딩해서사용한다
         //
+
+
+
     }
 }
