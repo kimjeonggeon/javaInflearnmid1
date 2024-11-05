@@ -16,12 +16,10 @@ public class Boj1929 {
         /*에라토스테네스으 체 이용*/
         /*n의 제곱근 까지 돌리면 됨 제곱근 위에 값들은 배수 처리가 되어서 할 필요가 없다. */
         for(int i =2; i<=Math.sqrt(N); i++){
-
             if(A[i]==0) continue;
             for(int j=i+i; j<=N; j = j+i){
                 A[j] = 0;
             }
-
         }
         for(int j = M; j<N; j++){
             if(A[j]!=0){
