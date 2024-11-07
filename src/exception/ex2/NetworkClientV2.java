@@ -20,7 +20,9 @@ public class NetworkClientV2 {
 
     public String send(String data) throws NetworkClientExceptionV2{
         if(sendError){
-            throw new NetworkClientExceptionV2("sendError",address+"서버 데이터 전송 실패");
+//            throw new NetworkClientExceptionV2("sendError",address+"서버 데이터 전송 실패");
+            throw new RuntimeException("sendError");
+
         }
         return "success" + data;
     }
@@ -28,7 +30,7 @@ public class NetworkClientV2 {
         System.out.println("서버연결 해제");
     }
     public void initError(String data){
-        if(data.contains("error")){
+        if(data.contains("error1")){
             connectError = true;
         }
         if(data.contains("error2")){

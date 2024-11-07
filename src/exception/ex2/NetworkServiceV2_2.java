@@ -20,5 +20,6 @@ public class NetworkServiceV2_2 {
             System.out.println("[오류]" + e.getErrorCode()+"에러메시지"+e.getMessage());
         }
         client.disconnect();
+        //
     }
 }
