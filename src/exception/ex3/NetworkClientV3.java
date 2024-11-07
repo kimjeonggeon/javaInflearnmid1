@@ -1,5 +1,8 @@
-package exception.ex3.exception;
+package exception.ex3;
 
+
+import exception.ex3.exception.ConnectExceptionV3;
+import exception.ex3.exception.SendExceptionV3;
 
 public class NetworkClientV3 {
 
@@ -19,10 +22,10 @@ public class NetworkClientV3 {
         return "success";
     }
 
-    public String send(String data) throws SendExceptionV3{
+    public String send(String data) throws SendExceptionV3 {
         if(sendError){
-            throw new SendExceptionV3("sendError",address+"서버 데이터 전송 실패");
-//            throw new RuntimeException("sendError");
+//            throw new SendExceptionV3("sendError",address+"서버 데이터 전송 실패");
+            throw new RuntimeException("sendError");
 
         }
         return "success" + data;

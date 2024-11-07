@@ -1,4 +1,4 @@
-package exception.ex3.exception;
+package exception.ex3;
 
 import java.util.Scanner;
 
@@ -7,7 +7,9 @@ public class MainV3 {
 //        NetworkServiceV2_1 service = new NetworkServiceV2_1();
 //        NetworkServiceV2_2 service = new NetworkServiceV2_2();
 //        NetworkServiceV2_3 service = new NetworkServiceV2_2();
-        NetworkServiceV3 service = new NetworkServiceV3();
+//        NetworkServiceV3 service = new NetworkServiceV3();
+          NetworkServiceV3_2 service = new NetworkServiceV3_2();
+
 
         Scanner scanner = new Scanner(System.in);
 
