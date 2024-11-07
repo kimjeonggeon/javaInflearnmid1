@@ -6,10 +6,13 @@ import java.util.Scanner;
 
 public class MainV2 {
     public static void main(String[ ] args) throws NetworkClientExceptionV2 {
-        NetworkServiceV2_1 service = new NetworkServiceV2_1();
+//        NetworkServiceV2_1 service = new NetworkServiceV2_1();
+        NetworkServiceV2_2 service = new NetworkServiceV2_2();
+
         Scanner scanner = new Scanner(System.in);
+
         while(true){
-            System.out.println("전송 문자");
+            System.out.print("전송 문자:");
             String input = scanner.nextLine();
             if(input.equals("exit")){
                 break;
