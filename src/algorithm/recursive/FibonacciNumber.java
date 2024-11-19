@@ -17,13 +17,21 @@ public class FibonacciNumber {
          else return fibo[n] = Dfs(n-1) + Dfs(n-2);
      }*/
 
-    /*방법 3 메모제이션 이미 구해놓은것을 사용하기  때문에 시간 단축*/
+//    /*방법 3 메모제이션 이미 구해놓은것을 사용하기  때문에 시간 단축*/
+//    public int Dfs(int n){
+//        if(fibo[n] > 0) return fibo[n];
+//        if(n == 1) return fibo[n] = 1;
+//        if(n == 2) return fibo[n] = 1;
+//        else return fibo[n] = Dfs(n-1) + Dfs(n-2);
+//    }
+
     public int Dfs(int n){
         if(fibo[n] > 0) return fibo[n];
-        if(n == 1) return fibo[n] = 1;
-        if(n == 2) return fibo[n] = 1;
+        if(n == 1) return  fibo[n] = 1;
+        if(n == 2) return fibo[n] = 2;
         else return fibo[n] = Dfs(n-1) + Dfs(n-2);
     }
+
      public static void main(String[] args){
          FibonacciNumber fibonacciNumber = new FibonacciNumber();
          int n = 7;

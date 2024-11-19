@@ -9,9 +9,12 @@ public class RecursiveTest3 {
 
     public int DFS(int n){
         //0이 되면 멈춰야한다.
-        if(n == 1) return 1;
-
+        if(n == 1) {
+            System.out.println(n );
+            return 1;
+        }
         else{
+            System.out.println(n);
             return n * DFS(n-1);
         }
         //재귀함수 자기자신을 부른다.
